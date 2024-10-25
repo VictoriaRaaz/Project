@@ -2,7 +2,7 @@
 Este proyecto es una página web informativa sobre el museo del pintor canario Néstor De La Torre.
 
 ## Descripción
-En esta página se mostrará una pequeña biografía del pintor, información de sus obras (fechas, estilos, técnicas usadas,rtc) e imágenes de sus pinturas.
+En esta página se mostrará una pequeña biografía del pintor, información de sus obras (fechas, estilos, técnicas usadas,rtc), imágenes de sus pinturas e información sobre el museo.
 
 ## Agradecimientos
 - **Profesor de Lenguaje de Marcas, Tiburcio** - Por explicarnos cómo crear paso a paso una página con HTML.
