@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header {
+    background-image: url('../img/painting1.jpg');
+    /* Background image for the main part of the page */
+    background-size: cover;
+    /* Adjust the background image to cover the entire header */
+    background-position: center;
+    /* Center the image */
+    min-height: 100vh;
+    /* Minimun height */
+
+    text-align: center;
+    /* Center the header text */
+    font-size: large;
+    /* Header text size */
+}
+
+h1 {
+    margin: 2%;
+    /* Add a 2% margin to the element */
+}
+
+.schedule-container {
+    text-align: right;
+    /* Align the link to the right */
+}
+
+body {
+    background-color: #D8D2C2;
+}
+
+.container {
+    display: flex;
+    /* Sets the container as a flex container */
+    flex-direction: row;
+    /* Aligns the container's content in a row */
+    flex-wrap: wrap;
+    /* Allows elements to wrap into multiple lines if they don’t fit on a single line */
+    justify-content: space-between;
+    /* Distributes elements with one at the start and another at the end */
+    padding: 2em;
+    /* Add space around the content */
+}
+
+.photo-container img {
+    /* image inside the container */
+    border-color: black;
+    /* border color (black) */
+    border-width: 3px;
+    /* border width */
+    border-style: solid;
+    /* border style */
+    border-collapse: collapse;
+    /* merges it into a single border */
+}
+
+.left-container {
+    text-align: left;
+    /* aligns the text to the left side */
+    width: 75%;
+    /* Control the width of the text */
+}
+
+.left-container p {
+    margin-bottom: 1em;
+    /* adds a margin below each paragraph */
+}
+
+h3 {
+    padding: 2em;
+    /* Add space around the content */
+}
+
+.canvas-container {
+    display: flex;
+    flex-direction: row;
+    /* aligns the canvass in a row */
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+}
+
+.canvas-container img {
+    width: 300px;
+    /* Set the width of the images */
+    height: 300px;
+    /* Set the height of the images */
+    margin: 1%;
+    /* Creates a 1% margin around each image */
+
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Add an animation */
+}
+
+.canvas-container img:hover {
+    /* effect applied to images */
+    transform: scale(1.05);
+    /* Slightly increase the size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Add a shadow */
+}
+
+footer {
+    background-color: #596e79;
+    /* Footer background color */
+    color: white;
+    /* Text color */
+    font-size: large;
+    /* Text size */
+    text-align: center;
+    /* Align text to center */
+
+    margin-top: 2em;
+    /* Space above the footer */
+    padding: 1em;
+    /* Add padding */
+    width: 100%;
+    /* The footer will take up 100% width */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        /* for this device size, it will display in a column */
+        align-items: center;
+        /* for these device sizes, it will be centered */
+        padding: 1em;
+        /* to maintain the space between paragraphs */
+    }
+
+    .left-container {
+        width: 100%;
+        /* to make the text occupy 100% of its width */
+        text-align: center;
+        /* to make it aligned in the center*/
+    }
+
+    footer {
+        padding: 1.5em;
+        /* More space on small devices */
+        font-size: small;
+        /* Smaller font size to fit better */
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        /* for this device size, the elements will align in a row */
+        padding: 2em;
+        /* to have some space around the content */
+    }
+
+    .left-container {
+        width: 85%;
+        /* to make the text occupy 85% of its width */
+    }
+
+    footer {
+        padding: 2em;
+        /* More space */
+        font-size: medium;
+        /* Medium font size */
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .left-container {
+        width: 75%;
+        /* to occupy 75% of its width */
+    }
+
+    footer {
+        padding: 2.5em;
+        /* More space for laptops and desktops */
+        font-size: large;
+        /* Large font size */
+    }
+}

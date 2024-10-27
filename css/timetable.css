@@ -1,0 +1,38 @@
+h1 {
+    margin: 10px;
+
+    padding: 10px;
+
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+table,
+tr,
+td,
+th {
+    margin: auto;
+    background-color: white;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+
+    border-collapse: collapse;
+}
+
+div {
+    text-align: right;
+}
+
+a:hover {
+    color: red;
+    background-color: aqua;
+}
+
+body {
+    background-image: url('../img/museum.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
